@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = "0.0.1"
   s.platform    = Gem::Platform::RUBY
   s.summary     = "Rack::Newsstand"
-  s.description = "Automatically generate REST APIs for Newsstand issue serving."
+  s.description = "Automatically generate webservice endpoints for Newsstand"
 
   s.add_dependency "rack", "~> 1.4"
   s.add_dependency "sinatra", "~> 1.3"
