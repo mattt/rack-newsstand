@@ -77,6 +77,7 @@ An example application can be found in the `/example` directory of this reposito
     </news:cover_art_icons>
   </entry>
 </feed>
+```
 
 ## Contact
 
