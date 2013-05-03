@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Mattt Thompson"]
   s.email       = "m@mattt.me"
   s.homepage    = "http://mattt.me"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.platform    = Gem::Platform::RUBY
   s.summary     = "Rack::Newsstand"
   s.description = "Automatically generate webservice endpoints for Newsstand"
