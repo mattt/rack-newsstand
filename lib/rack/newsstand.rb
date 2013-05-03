@@ -43,8 +43,6 @@ module Rack
       pass unless request.accept? 'application/x-plist'
       content_type 'application/x-plist'
 
-      param :name, String, empty: false
-
       Issue.find(name: params[:name]).to_plist
     end
 
