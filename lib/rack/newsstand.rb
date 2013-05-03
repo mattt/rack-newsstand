@@ -31,6 +31,8 @@ module Rack
         when 'application/x-plist'
           content_type 'application/x-plist'
           return @issues.to_plist
+        when 'application/json'
+          pass
         end
       end
 
