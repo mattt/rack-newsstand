@@ -8,6 +8,8 @@ Sequel.migration do
       column :name,         :varchar, unique: true, empty: false
       column :title,        :varchar, empty: false
       column :summary,      :varchar, empty: false
+      column :tags,         :'text[]'
+      column :metadata,     :hstore
       column :cover_urls,   :hstore
       column :asset_urls,   :'text[]'
       column :created_at,   :timestamp
