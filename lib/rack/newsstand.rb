@@ -20,8 +20,8 @@ module Rack
       end
     end
 
-    get '/issues' do
-      @issues = Issue.order(:published_at).all
+    get '/issues/?' do
+      @issues = Issue.where("published_at <= :now AND (expires_at > :now OR expires_at IS NULL)", now: Time.now).order(:published_at).all
 
       request.accept.each do |type|
         case type.to_s
@@ -39,7 +39,7 @@ module Rack
       halt 406
     end
 
-    get '/issues/:name' do
+    get '/issues/:name/?' do
       pass unless request.accept? 'application/x-plist'
       content_type 'application/x-plist'
 
