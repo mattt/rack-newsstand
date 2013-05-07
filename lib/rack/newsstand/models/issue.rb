@@ -18,8 +18,8 @@ module Rack
           name: self.name,
           title: self.title,
           date: self.published_at,
-          covers: self.cover_urls.to_hash,
-          assets: self.asset_urls.to_a
+          covers: (self.cover_urls || {}).to_hash,
+          assets: (self.asset_urls || []).to_a
         }.to_plist(false)
       end
 
