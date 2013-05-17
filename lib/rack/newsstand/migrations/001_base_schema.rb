@@ -6,7 +6,6 @@ Sequel.migration do
       primary_key :id
 
       column :name,         :varchar, unique: true, empty: false
-      column :title,        :varchar, empty: false
       column :summary,      :varchar, empty: false
       column :tags,         :'text[]'
       column :metadata,     :hstore
