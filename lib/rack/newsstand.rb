@@ -9,7 +9,7 @@ module Rack
     disable :raise_errors, :show_exceptions
 
     configure do
-      Sequel.extension :core_extensions, :migration, :pg_array, :pg_hstore, :pg_hstore_ops
+      Sequel.extension :core_extensions, :migration, :pg_array, :pg_array_ops, :pg_hstore, :pg_hstore_ops
 
       if ENV['DATABASE_URL']
         DB = Sequel.connect(ENV['DATABASE_URL'])
