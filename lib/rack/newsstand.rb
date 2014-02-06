@@ -26,7 +26,7 @@ module Rack
       request.accept.each do |type|
         case type.to_s
         when 'application/atom+xml', 'application/xml', 'text/xml'
-          content_type 'application/x-plist'
+          content_type 'application/atom+xml'
           return builder :atom
         when 'application/x-plist'
           content_type 'application/x-plist'
