@@ -21,7 +21,7 @@ module Rack
     end
 
     get '/issues/?' do
-      @issues = Issue.where("published_at <= :now AND (expires_at > :now OR expires_at IS NULL)", now: Time.now).order(:published_at).all
+      @issues = Issue.where("published_at <= :now AND (expires_at IS NULL OR expires_at > :now)", now: Time.now).order(:published_at).all
 
       request.accept.each do |type|
         case type.to_s
