@@ -4,7 +4,7 @@ Newsstand was introduced in iOS 5 to give publishers a common framework to syndi
 
 ## Requirements
 
-- PostgreSQL 9.1 running locally ([Postgres.app](http://postgresapp.com) is the easiest way to get a Postgres server running on your Mac)
+- PostgreSQL 9.1
 
 ## Example Usage
 
@@ -81,12 +81,9 @@ An example application can be found in the `/example` directory of this reposito
 
 ## Contact
 
-Mattt Thompson
-
-- http://github.com/mattt
-- http://twitter.com/mattt
-- m@mattt.me
+[Mattt](https://twitter.com/mattt)
 
 ## License
 
-Rack::Newsstand is available under the MIT license. See the LICENSE file for more info.
+Rack::Newsstand is available under the MIT license.
+See the LICENSE file for more info.
