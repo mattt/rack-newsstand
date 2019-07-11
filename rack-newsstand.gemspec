@@ -4,8 +4,8 @@ $:.push File.expand_path("../lib", __FILE__)
 Gem::Specification.new do |s|
   s.name        = "rack-newsstand"
   s.license     = "MIT"
-  s.authors     = ["Mattt Thompson"]
-  s.email       = "m@mattt.me"
+  s.authors     = ["Mattt"]
+  s.email       = "mattt@me.com"
   s.homepage    = "http://mattt.me"
   s.version     = "0.1.2"
   s.platform    = Gem::Platform::RUBY
