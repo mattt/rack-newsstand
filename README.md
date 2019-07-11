@@ -1,6 +1,9 @@
 # Rack::Newsstand
 
-Newsstand was introduced in iOS 5 to give publishers a common framework to syndicate content. `Rack::Newsstand` provides webservice endpoints for issue data, as well as a Newsstand Atom feed.
+> Newsstand was deprecated in iOS 9.
+> This project is no longer maintained.
+
+Newsstand was introduced in iOS 5 to give publishers a common framework to syndicate content. `Rack::Newsstand` provides web service endpoints for issue data, as well as a Newsstand Atom feed.
 
 ## Requirements
 
